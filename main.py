@@ -1,5 +1,11 @@
-from capsearch import *
+import capsearch as cap
 import os
 import re
-import sys
-# main function that will be called when the program is run! 
+
+
+for paper in os.listdir('papers'):
+    print (paper)
+    for p in os.listdir(f'papers/{paper}'):
+        ps = p.split(".")[-1]
+        if ps=='tex':
+            print (p)

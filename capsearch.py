@@ -59,8 +59,41 @@ def find_title(file_path):
     return re.sub(r"[^a-zA-Z\s]", "", match.split("\n")[0]) # it will remove all non-letter characters!
 
 
-def find_authors(file_path):
-    pass
+# Function to search for authors in a file
+def find_authors_in_directory(directory_path):
+    # Function to search for authors in a file
+    def find_authors_in_file(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+
+        # Define a regular expression pattern to search for authors
+        author_pattern = re.compile(r'Author[s]*: ([\w\s,]+)')
+
+        # Search for authors in the file content
+        author_matches = author_pattern.findall(content)
+
+        return author_matches
+
+    # List to store author names
+    authors_list = []
+    # Iterate through files in the directory and its subdirectories
+    for root, _, files in os.walk(directory_path):
+        for file_name in files:
+            file_path = os.path.join(root, file_name)
+
+            # Search for authors in the file
+            authors = find_authors_in_file(directory_path)
+
+            # Append authors to the list
+            authors_list.extend(authors)
+
+    return authors_list
+   
+
+
+# Print the list of authors
+print(authors_list)
+    
 
 def find_abstract(file_path):
     pass

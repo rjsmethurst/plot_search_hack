@@ -1,0 +1,1 @@
+function _objectDestructuringEmpty(t){if(null==t)throw new TypeError("Cannot destructure "+t)}define(["../components/SaveQueryForm.jsx","react-redux","../actions"],function(t,e,n){var r=e.connect;_objectDestructuringEmpty(n);return r(function(t){return{requests:{addNotification:t.requests.ADD_NOTIFICATION}}},{})(t)});

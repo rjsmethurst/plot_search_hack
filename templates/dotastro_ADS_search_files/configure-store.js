@@ -1,0 +1,1 @@
+define(["redux","redux-thunk","./modules/sort-app"],function(e,r,t){var u=e.createStore,n=e.applyMiddleware;return function(d){var a=n(r.default.withExtraArgument(d)),o=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||e.compose;return u(t.reducer,o(a))}});

@@ -1,0 +1,1 @@
+define(["redux"],function(e){var r=e.Redux,n=e.createStore,_=e.applyMiddleware,a=e.compose;return function(e,d,o){var t=_.apply(r,o(e)),u=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||a;return n(d,u(t))}});

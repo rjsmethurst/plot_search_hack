@@ -1,0 +1,1 @@
+define(["./searchExamples"],function(e){return{searchExamples:e}});

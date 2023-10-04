@@ -1,0 +1,1 @@
+define(["underscore","react-redux","../redux/modules/ui","../components/app.jsx"],function(n,r,e,i){var u=e.handleLinkClick;return r.connect(function(n){return{loading:n.ui.loading,items:n.ui.items,hasError:n.ui.hasError}},function(n){return{handleLinkClick:function(r){return n(u(r))}}})(i)});

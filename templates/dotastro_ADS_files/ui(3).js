@@ -1,0 +1,1 @@
+define(["../modules/api","../modules/ui"],function(n,t){var u=t.actions.LINK_CLICKED,e=n.actions.SEND_ANALYTICS;return[function(n){var t=n.dispatch;return function(n){return function(i){n(i),i.type===u&&t({type:e,result:i.result})}}}]});

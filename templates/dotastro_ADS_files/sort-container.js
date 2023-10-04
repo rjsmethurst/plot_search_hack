@@ -1,0 +1,1 @@
+define(["react-redux","../redux/modules/sort-app","../components/sort-app.jsx"],function(t,n,r){var e=n.setSort,o=n.setDirection;return t.connect(function(t){return{app:t}},function(t){return{setSort:function(n){return t(e(n))},setDirection:function(){return t(o())}}})(r)});

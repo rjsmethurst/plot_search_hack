@@ -1,0 +1,1 @@
+define(["js/widgets/graphics/widget"],function(e){var n={sidebar:!0};return function(){return new e(n)}});
