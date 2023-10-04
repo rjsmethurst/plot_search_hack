@@ -19,6 +19,7 @@ def find_caption(file_path):
 
     # Define a regular expression pattern to match strings starting with "caption{"
     caption_pattern = re.compile(r'\\caption\{([^{}]*)\}')
+    print (caption_pattern)
 
     # Find and extract all strings starting with "caption{"
     matches = caption_pattern.findall(tex_content)
@@ -34,6 +35,14 @@ def find_arxiv_id(file_path):
     pass
 
 def find_title(file_path):
+    """Given the file path this functil will return a list of strings that start with "title{"
+        TODO: finish docstring!
+    Args:
+        file_path (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     # Open and read the .tex file
     with open(file_path, 'r', encoding='utf-8') as tex_file:
         tex_content = tex_file.read()
@@ -59,6 +68,3 @@ def find_abstract(file_path):
 def ingest_json_file(file_path):
     pass
 
-
-path = "/Users/andytzanidakis/Desktop/desk/astro_research/open_source_tools/ads_hack/papers/gaia.tex"
-print (find_title(path))

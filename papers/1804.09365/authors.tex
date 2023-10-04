@@ -1,0 +1,594 @@
+\author{
+{\it Gaia} Collaboration
+\and A.G.A.    ~Brown                         \inst{\ref{inst:0001}}
+\and A.        ~Vallenari                     \inst{\ref{inst:0002}}
+\and T.        ~Prusti                        \inst{\ref{inst:0003}}
+\and J.H.J.    ~de Bruijne                    \inst{\ref{inst:0003}}
+\and C.        ~Babusiaux                     \inst{\ref{inst:0005},\ref{inst:0006}}
+\and C.A.L.    ~Bailer-Jones                  \inst{\ref{inst:0007}}
+\and M.        ~Biermann                      \inst{\ref{inst:0008}}
+\and D.W.      ~Evans                         \inst{\ref{inst:0009}}
+\and L.        ~Eyer                          \inst{\ref{inst:0010}}
+\and F.        ~Jansen                        \inst{\ref{inst:0011}}
+\and C.        ~Jordi                         \inst{\ref{inst:0012}}
+\and S.A.      ~Klioner                       \inst{\ref{inst:0013}}
+\and U.        ~Lammers                       \inst{\ref{inst:0014}}
+\and L.        ~Lindegren                     \inst{\ref{inst:0015}}
+\and X.        ~Luri                          \inst{\ref{inst:0012}}
+\and F.        ~Mignard                       \inst{\ref{inst:0017}}
+\and C.        ~Panem                         \inst{\ref{inst:0018}}
+\and D.        ~Pourbaix                      \inst{\ref{inst:0019},\ref{inst:0020}}
+\and S.        ~Randich                       \inst{\ref{inst:0021}}
+\and P.        ~Sartoretti                    \inst{\ref{inst:0005}}
+\and H.I.      ~Siddiqui                      \inst{\ref{inst:0023}}
+\and C.        ~Soubiran                      \inst{\ref{inst:0024}}
+\and F.        ~van Leeuwen                   \inst{\ref{inst:0009}}
+\and N.A.      ~Walton                        \inst{\ref{inst:0009}}
+\and F.        ~Arenou                        \inst{\ref{inst:0005}}
+\and U.        ~Bastian                       \inst{\ref{inst:0008}}
+\and M.        ~Cropper                       \inst{\ref{inst:0029}}
+\and R.        ~Drimmel                       \inst{\ref{inst:0030}}
+\and D.        ~Katz                          \inst{\ref{inst:0005}}
+\and M.G.      ~Lattanzi                      \inst{\ref{inst:0030}}
+\and J.        ~Bakker                        \inst{\ref{inst:0014}}
+\and C.        ~Cacciari                      \inst{\ref{inst:0034}}
+\and J.        ~Casta\~{n}eda                 \inst{\ref{inst:0012}}
+\and L.        ~Chaoul                        \inst{\ref{inst:0018}}
+\and N.        ~Cheek                         \inst{\ref{inst:0037}}
+\and F.        ~De Angeli                     \inst{\ref{inst:0009}}
+\and C.        ~Fabricius                     \inst{\ref{inst:0012}}
+\and R.        ~Guerra                        \inst{\ref{inst:0014}}
+\and B.        ~Holl                          \inst{\ref{inst:0010}}
+\and E.        ~Masana                        \inst{\ref{inst:0012}}
+\and R.        ~Messineo                      \inst{\ref{inst:0043}}
+\and N.        ~Mowlavi                       \inst{\ref{inst:0010}}
+\and K.        ~Nienartowicz                  \inst{\ref{inst:0045}}
+\and P.        ~Panuzzo                       \inst{\ref{inst:0005}}
+\and J.        ~Portell                       \inst{\ref{inst:0012}}
+\and M.        ~Riello                        \inst{\ref{inst:0009}}
+\and G.M.      ~Seabroke                      \inst{\ref{inst:0029}}
+\and P.        ~Tanga                         \inst{\ref{inst:0017}}
+\and F.        ~Th\'{e}venin                  \inst{\ref{inst:0017}}
+\and G.        ~Gracia-Abril                  \inst{\ref{inst:0052},\ref{inst:0008}}
+\and G.        ~Comoretto                     \inst{\ref{inst:0023}}
+\and M.        ~Garcia-Reinaldos              \inst{\ref{inst:0014}}
+\and D.        ~Teyssier                      \inst{\ref{inst:0023}}
+\and M.        ~Altmann                       \inst{\ref{inst:0008},\ref{inst:0058}}
+\and R.        ~Andrae                        \inst{\ref{inst:0007}}
+\and M.        ~Audard                        \inst{\ref{inst:0010}}
+\and I.        ~Bellas-Velidis                \inst{\ref{inst:0061}}
+\and K.        ~Benson                        \inst{\ref{inst:0029}}
+\and J.        ~Berthier                      \inst{\ref{inst:0063}}
+\and R.        ~Blomme                        \inst{\ref{inst:0064}}
+\and P.        ~Burgess                       \inst{\ref{inst:0009}}
+\and G.        ~Busso                         \inst{\ref{inst:0009}}
+\and B.        ~Carry                         \inst{\ref{inst:0017},\ref{inst:0063}}
+\and A.        ~Cellino                       \inst{\ref{inst:0030}}
+\and G.        ~Clementini                    \inst{\ref{inst:0034}}
+\and M.        ~Clotet                        \inst{\ref{inst:0012}}
+\and O.        ~Creevey                       \inst{\ref{inst:0017}}
+\and M.        ~Davidson                      \inst{\ref{inst:0073}}
+\and J.        ~De Ridder                     \inst{\ref{inst:0074}}
+\and L.        ~Delchambre                    \inst{\ref{inst:0075}}
+\and A.        ~Dell'Oro                      \inst{\ref{inst:0021}}
+\and C.        ~Ducourant                     \inst{\ref{inst:0024}}
+\and J.        ~Fern\'{a}ndez-Hern\'{a}ndez   \inst{\ref{inst:0078}}
+\and M.        ~Fouesneau                     \inst{\ref{inst:0007}}
+\and Y.        ~Fr\'{e}mat                    \inst{\ref{inst:0064}}
+\and L.        ~Galluccio                     \inst{\ref{inst:0017}}
+\and M.        ~Garc\'{i}a-Torres             \inst{\ref{inst:0082}}
+\and J.        ~Gonz\'{a}lez-N\'{u}\~{n}ez    \inst{\ref{inst:0037},\ref{inst:0084}}
+\and J.J.      ~Gonz\'{a}lez-Vidal            \inst{\ref{inst:0012}}
+\and E.        ~Gosset                        \inst{\ref{inst:0075},\ref{inst:0020}}
+\and L.P.      ~Guy                           \inst{\ref{inst:0045},\ref{inst:0089}}
+\and J.-L.     ~Halbwachs                     \inst{\ref{inst:0090}}
+\and N.C.      ~Hambly                        \inst{\ref{inst:0073}}
+\and D.L.      ~Harrison                      \inst{\ref{inst:0009},\ref{inst:0093}}
+\and J.        ~Hern\'{a}ndez                 \inst{\ref{inst:0014}}
+\and D.        ~Hestroffer                    \inst{\ref{inst:0063}}
+\and S.T.      ~Hodgkin                       \inst{\ref{inst:0009}}
+\and A.        ~Hutton                        \inst{\ref{inst:0097}}
+\and G.        ~Jasniewicz                    \inst{\ref{inst:0098}}
+\and A.        ~Jean-Antoine-Piccolo          \inst{\ref{inst:0018}}
+\and S.        ~Jordan                        \inst{\ref{inst:0008}}
+\and A.J.      ~Korn                          \inst{\ref{inst:0101}}
+\and A.        ~Krone-Martins                 \inst{\ref{inst:0102}}
+\and A.C.      ~Lanzafame                     \inst{\ref{inst:0103},\ref{inst:0104}}
+\and T.        ~Lebzelter                     \inst{\ref{inst:0105}}
+\and W.        ~L\"{ o}ffler                  \inst{\ref{inst:0008}}
+\and M.        ~Manteiga                      \inst{\ref{inst:0107},\ref{inst:0108}}
+\and P.M.      ~Marrese                       \inst{\ref{inst:0109},\ref{inst:0110}}
+\and J.M.      ~Mart\'{i}n-Fleitas            \inst{\ref{inst:0097}}
+\and A.        ~Moitinho                      \inst{\ref{inst:0102}}
+\and A.        ~Mora                          \inst{\ref{inst:0097}}
+\and K.        ~Muinonen                      \inst{\ref{inst:0114},\ref{inst:0115}}
+\and J.        ~Osinde                        \inst{\ref{inst:0116}}
+\and E.        ~Pancino                       \inst{\ref{inst:0021},\ref{inst:0110}}
+\and T.        ~Pauwels                       \inst{\ref{inst:0064}}
+\and J.-M.     ~Petit                         \inst{\ref{inst:0120}}
+\and A.        ~Recio-Blanco                  \inst{\ref{inst:0017}}
+\and P.J.      ~Richards                      \inst{\ref{inst:0122}}
+\and L.        ~Rimoldini                     \inst{\ref{inst:0045}}
+\and A.C.      ~Robin                         \inst{\ref{inst:0120}}
+\and L.M.      ~Sarro                         \inst{\ref{inst:0125}}
+\and C.        ~Siopis                        \inst{\ref{inst:0019}}
+\and M.        ~Smith                         \inst{\ref{inst:0029}}
+\and A.        ~Sozzetti                      \inst{\ref{inst:0030}}
+\and M.        ~S\"{ u}veges                  \inst{\ref{inst:0007}}
+\and J.        ~Torra                         \inst{\ref{inst:0012}}
+\and W.        ~van Reeven                    \inst{\ref{inst:0097}}
+\and U.        ~Abbas                         \inst{\ref{inst:0030}}
+\and A.        ~Abreu Aramburu                \inst{\ref{inst:0133}}
+\and S.        ~Accart                        \inst{\ref{inst:0134}}
+\and C.        ~Aerts                         \inst{\ref{inst:0074},\ref{inst:0136}}
+\and G.        ~Altavilla                     \inst{\ref{inst:0109},\ref{inst:0110},\ref{inst:0034}}
+\and M.A.      ~\'{A}lvarez                   \inst{\ref{inst:0107}}
+\and R.        ~Alvarez                       \inst{\ref{inst:0014}}
+\and J.        ~Alves                         \inst{\ref{inst:0105}}
+\and R.I.      ~Anderson                      \inst{\ref{inst:0143},\ref{inst:0010}}
+\and A.H.      ~Andrei                        \inst{\ref{inst:0145},\ref{inst:0146},\ref{inst:0058}}
+\and E.        ~Anglada Varela                \inst{\ref{inst:0078}}
+\and E.        ~Antiche                       \inst{\ref{inst:0012}}
+\and T.        ~Antoja                        \inst{\ref{inst:0003},\ref{inst:0012}}
+\and B.        ~Arcay                         \inst{\ref{inst:0107}}
+\and T.L.      ~Astraatmadja                  \inst{\ref{inst:0007},\ref{inst:0154}}
+\and N.        ~Bach                          \inst{\ref{inst:0097}}
+\and S.G.      ~Baker                         \inst{\ref{inst:0029}}
+\and L.        ~Balaguer-N\'{u}\~{n}ez        \inst{\ref{inst:0012}}
+\and P.        ~Balm                          \inst{\ref{inst:0023}}
+\and C.        ~Barache                       \inst{\ref{inst:0058}}
+\and C.        ~Barata                        \inst{\ref{inst:0102}}
+\and D.        ~Barbato                       \inst{\ref{inst:0161},\ref{inst:0030}}
+\and F.        ~Barblan                       \inst{\ref{inst:0010}}
+\and P.S.      ~Barklem                       \inst{\ref{inst:0101}}
+\and D.        ~Barrado                       \inst{\ref{inst:0165}}
+\and M.        ~Barros                        \inst{\ref{inst:0102}}
+\and M.A.      ~Barstow                       \inst{\ref{inst:0167}}
+\and S.        ~Bartholom\'{e} Mu\~{n}oz      \inst{\ref{inst:0012}}
+\and J.-L.     ~Bassilana                     \inst{\ref{inst:0134}}
+\and U.        ~Becciani                      \inst{\ref{inst:0104}}
+\and M.        ~Bellazzini                    \inst{\ref{inst:0034}}
+\and A.        ~Berihuete                     \inst{\ref{inst:0172}}
+\and S.        ~Bertone                       \inst{\ref{inst:0030},\ref{inst:0058},\ref{inst:0175}}
+\and L.        ~Bianchi                       \inst{\ref{inst:0176}}
+\and O.        ~Bienaym\'{e}                  \inst{\ref{inst:0090}}
+\and S.        ~Blanco-Cuaresma               \inst{\ref{inst:0010},\ref{inst:0024},\ref{inst:0180}}
+\and T.        ~Boch                          \inst{\ref{inst:0090}}
+\and C.        ~Boeche                        \inst{\ref{inst:0002}}
+\and A.        ~Bombrun                       \inst{\ref{inst:0183}}
+\and R.        ~Borrachero                    \inst{\ref{inst:0012}}
+\and D.        ~Bossini                       \inst{\ref{inst:0002}}
+\and S.        ~Bouquillon                    \inst{\ref{inst:0058}}
+\and G.        ~Bourda                        \inst{\ref{inst:0024}}
+\and A.        ~Bragaglia                     \inst{\ref{inst:0034}}
+\and L.        ~Bramante                      \inst{\ref{inst:0043}}
+\and M.A.      ~Breddels                      \inst{\ref{inst:0190}}
+\and A.        ~Bressan                       \inst{\ref{inst:0191}}
+\and N.        ~Brouillet                     \inst{\ref{inst:0024}}
+\and T.        ~Br\"{ u}semeister             \inst{\ref{inst:0008}}
+\and E.        ~Brugaletta                    \inst{\ref{inst:0104}}
+\and B.        ~Bucciarelli                   \inst{\ref{inst:0030}}
+\and A.        ~Burlacu                       \inst{\ref{inst:0018}}
+\and D.        ~Busonero                      \inst{\ref{inst:0030}}
+\and A.G.      ~Butkevich                     \inst{\ref{inst:0013}}
+\and R.        ~Buzzi                         \inst{\ref{inst:0030}}
+\and E.        ~Caffau                        \inst{\ref{inst:0005}}
+\and R.        ~Cancelliere                   \inst{\ref{inst:0201}}
+\and G.        ~Cannizzaro                    \inst{\ref{inst:0202},\ref{inst:0136}}
+\and T.        ~Cantat-Gaudin                 \inst{\ref{inst:0002},\ref{inst:0012}}
+\and R.        ~Carballo                      \inst{\ref{inst:0206}}
+\and T.        ~Carlucci                      \inst{\ref{inst:0058}}
+\and J.M.      ~Carrasco                      \inst{\ref{inst:0012}}
+\and L.        ~Casamiquela                   \inst{\ref{inst:0012}}
+\and M.        ~Castellani                    \inst{\ref{inst:0109}}
+\and A.        ~Castro-Ginard                 \inst{\ref{inst:0012}}
+\and P.        ~Charlot                       \inst{\ref{inst:0024}}
+\and L.        ~Chemin                        \inst{\ref{inst:0213}}
+\and A.        ~Chiavassa                     \inst{\ref{inst:0017}}
+\and G.        ~Cocozza                       \inst{\ref{inst:0034}}
+\and G.        ~Costigan                      \inst{\ref{inst:0001}}
+\and S.        ~Cowell                        \inst{\ref{inst:0009}}
+\and F.        ~Crifo                         \inst{\ref{inst:0005}}
+\and M.        ~Crosta                        \inst{\ref{inst:0030}}
+\and C.        ~Crowley                       \inst{\ref{inst:0183}}
+\and J.        ~Cuypers$^\dagger$             \inst{\ref{inst:0064}}
+\and C.        ~Dafonte                       \inst{\ref{inst:0107}}
+\and Y.        ~Damerdji                      \inst{\ref{inst:0075},\ref{inst:0224}}
+\and A.        ~Dapergolas                    \inst{\ref{inst:0061}}
+\and P.        ~David                         \inst{\ref{inst:0063}}
+\and M.        ~David                         \inst{\ref{inst:0227}}
+\and P.        ~de Laverny                    \inst{\ref{inst:0017}}
+\and F.        ~De Luise                      \inst{\ref{inst:0229}}
+\and R.        ~De March                      \inst{\ref{inst:0043}}
+\and D.        ~de Martino                    \inst{\ref{inst:0231}}
+\and R.        ~de Souza                      \inst{\ref{inst:0232}}
+\and A.        ~de Torres                     \inst{\ref{inst:0183}}
+\and J.        ~Debosscher                    \inst{\ref{inst:0074}}
+\and E.        ~del Pozo                      \inst{\ref{inst:0097}}
+\and M.        ~Delbo                         \inst{\ref{inst:0017}}
+\and A.        ~Delgado                       \inst{\ref{inst:0009}}
+\and H.E.      ~Delgado                       \inst{\ref{inst:0125}}
+\and P.        ~Di Matteo                     \inst{\ref{inst:0005}}
+\and S.        ~Diakite                       \inst{\ref{inst:0120}}
+\and C.        ~Diener                        \inst{\ref{inst:0009}}
+\and E.        ~Distefano                     \inst{\ref{inst:0104}}
+\and C.        ~Dolding                       \inst{\ref{inst:0029}}
+\and P.        ~Drazinos                      \inst{\ref{inst:0244}}
+\and J.        ~Dur\'{a}n                     \inst{\ref{inst:0116}}
+\and B.        ~Edvardsson                    \inst{\ref{inst:0101}}
+\and H.        ~Enke                          \inst{\ref{inst:0247}}
+\and K.        ~Eriksson                      \inst{\ref{inst:0101}}
+\and P.        ~Esquej                        \inst{\ref{inst:0249}}
+\and G.        ~Eynard Bontemps               \inst{\ref{inst:0018}}
+\and C.        ~Fabre                         \inst{\ref{inst:0251}}
+\and M.        ~Fabrizio                      \inst{\ref{inst:0109},\ref{inst:0110}}
+\and S.        ~Faigler                       \inst{\ref{inst:0254}}
+\and A.J.      ~Falc\~{a}o                    \inst{\ref{inst:0255}}
+\and M.        ~Farr\`{a}s Casas              \inst{\ref{inst:0012}}
+\and L.        ~Federici                      \inst{\ref{inst:0034}}
+\and G.        ~Fedorets                      \inst{\ref{inst:0114}}
+\and P.        ~Fernique                      \inst{\ref{inst:0090}}
+\and F.        ~Figueras                      \inst{\ref{inst:0012}}
+\and F.        ~Filippi                       \inst{\ref{inst:0043}}
+\and K.        ~Findeisen                     \inst{\ref{inst:0005}}
+\and A.        ~Fonti                         \inst{\ref{inst:0043}}
+\and E.        ~Fraile                        \inst{\ref{inst:0249}}
+\and M.        ~Fraser                        \inst{\ref{inst:0009},\ref{inst:0266}}
+\and B.        ~Fr\'{e}zouls                  \inst{\ref{inst:0018}}
+\and M.        ~Gai                           \inst{\ref{inst:0030}}
+\and S.        ~Galleti                       \inst{\ref{inst:0034}}
+\and D.        ~Garabato                      \inst{\ref{inst:0107}}
+\and F.        ~Garc\'{i}a-Sedano             \inst{\ref{inst:0125}}
+\and A.        ~Garofalo                      \inst{\ref{inst:0272},\ref{inst:0034}}
+\and N.        ~Garralda                      \inst{\ref{inst:0012}}
+\and A.        ~Gavel                         \inst{\ref{inst:0101}}
+\and P.        ~Gavras                        \inst{\ref{inst:0005},\ref{inst:0061},\ref{inst:0244}}
+\and J.        ~Gerssen                       \inst{\ref{inst:0247}}
+\and R.        ~Geyer                         \inst{\ref{inst:0013}}
+\and P.        ~Giacobbe                      \inst{\ref{inst:0030}}
+\and G.        ~Gilmore                       \inst{\ref{inst:0009}}
+\and S.        ~Girona                        \inst{\ref{inst:0283}}
+\and G.        ~Giuffrida                     \inst{\ref{inst:0110},\ref{inst:0109}}
+\and F.        ~Glass                         \inst{\ref{inst:0010}}
+\and M.        ~Gomes                         \inst{\ref{inst:0102}}
+\and M.        ~Granvik                       \inst{\ref{inst:0114},\ref{inst:0289}}
+\and A.        ~Gueguen                       \inst{\ref{inst:0005},\ref{inst:0291}}
+\and A.        ~Guerrier                      \inst{\ref{inst:0134}}
+\and J.        ~Guiraud                       \inst{\ref{inst:0018}}
+\and R.        ~Guti\'{e}rrez-S\'{a}nchez     \inst{\ref{inst:0023}}
+\and R.        ~Haigron                       \inst{\ref{inst:0005}}
+\and D.        ~Hatzidimitriou                \inst{\ref{inst:0244},\ref{inst:0061}}
+\and M.        ~Hauser                        \inst{\ref{inst:0008},\ref{inst:0007}}
+\and M.        ~Haywood                       \inst{\ref{inst:0005}}
+\and U.        ~Heiter                        \inst{\ref{inst:0101}}
+\and A.        ~Helmi                         \inst{\ref{inst:0190}}
+\and J.        ~Heu                           \inst{\ref{inst:0005}}
+\and T.        ~Hilger                        \inst{\ref{inst:0013}}
+\and D.        ~Hobbs                         \inst{\ref{inst:0015}}
+\and W.        ~Hofmann                       \inst{\ref{inst:0008}}
+\and G.        ~Holland                       \inst{\ref{inst:0009}}
+\and H.E.      ~Huckle                        \inst{\ref{inst:0029}}
+\and A.        ~Hypki                         \inst{\ref{inst:0001},\ref{inst:0310}}
+\and V.        ~Icardi                        \inst{\ref{inst:0043}}
+\and K.        ~Jan{\ss}en                    \inst{\ref{inst:0247}}
+\and G.        ~Jevardat de Fombelle          \inst{\ref{inst:0045}}
+\and P.G.      ~Jonker                        \inst{\ref{inst:0202},\ref{inst:0136}}
+\and \'{A}.L.  ~Juh\'{a}sz                    \inst{\ref{inst:0316},\ref{inst:0317}}
+\and F.        ~Julbe                         \inst{\ref{inst:0012}}
+\and A.        ~Karampelas                    \inst{\ref{inst:0244},\ref{inst:0320}}
+\and A.        ~Kewley                        \inst{\ref{inst:0009}}
+\and J.        ~Klar                          \inst{\ref{inst:0247}}
+\and A.        ~Kochoska                      \inst{\ref{inst:0323},\ref{inst:0324}}
+\and R.        ~Kohley                        \inst{\ref{inst:0014}}
+\and K.        ~Kolenberg                     \inst{\ref{inst:0326},\ref{inst:0074},\ref{inst:0180}}
+\and M.        ~Kontizas                      \inst{\ref{inst:0244}}
+\and E.        ~Kontizas                      \inst{\ref{inst:0061}}
+\and S.E.      ~Koposov                       \inst{\ref{inst:0009},\ref{inst:0332}}
+\and G.        ~Kordopatis                    \inst{\ref{inst:0017}}
+\and Z.        ~Kostrzewa-Rutkowska           \inst{\ref{inst:0202},\ref{inst:0136}}
+\and P.        ~Koubsky                       \inst{\ref{inst:0336}}
+\and S.        ~Lambert                       \inst{\ref{inst:0058}}
+\and A.F.      ~Lanza                         \inst{\ref{inst:0104}}
+\and Y.        ~Lasne                         \inst{\ref{inst:0134}}
+\and J.-B.     ~Lavigne                       \inst{\ref{inst:0134}}
+\and Y.        ~Le Fustec                     \inst{\ref{inst:0341}}
+\and C.        ~Le Poncin-Lafitte             \inst{\ref{inst:0058}}
+\and Y.        ~Lebreton                      \inst{\ref{inst:0005},\ref{inst:0344}}
+\and S.        ~Leccia                        \inst{\ref{inst:0231}}
+\and N.        ~Leclerc                       \inst{\ref{inst:0005}}
+\and I.        ~Lecoeur-Taibi                 \inst{\ref{inst:0045}}
+\and H.        ~Lenhardt                      \inst{\ref{inst:0008}}
+\and F.        ~Leroux                        \inst{\ref{inst:0134}}
+\and S.        ~Liao                          \inst{\ref{inst:0030},\ref{inst:0351},\ref{inst:0352}}
+\and E.        ~Licata                        \inst{\ref{inst:0176}}
+\and H.E.P.    ~Lindstr{\o}m                  \inst{\ref{inst:0354},\ref{inst:0355}}
+\and T.A.      ~Lister                        \inst{\ref{inst:0356}}
+\and E.        ~Livanou                       \inst{\ref{inst:0244}}
+\and A.        ~Lobel                         \inst{\ref{inst:0064}}
+\and M.        ~L\'{o}pez                     \inst{\ref{inst:0165}}
+\and S.        ~Managau                       \inst{\ref{inst:0134}}
+\and R.G.      ~Mann                          \inst{\ref{inst:0073}}
+\and G.        ~Mantelet                      \inst{\ref{inst:0008}}
+\and O.        ~Marchal                       \inst{\ref{inst:0005}}
+\and J.M.      ~Marchant                      \inst{\ref{inst:0364}}
+\and M.        ~Marconi                       \inst{\ref{inst:0231}}
+\and S.        ~Marinoni                      \inst{\ref{inst:0109},\ref{inst:0110}}
+\and G.        ~Marschalk\'{o}                \inst{\ref{inst:0316},\ref{inst:0369}}
+\and D.J.      ~Marshall                      \inst{\ref{inst:0370}}
+\and M.        ~Martino                       \inst{\ref{inst:0043}}
+\and G.        ~Marton                        \inst{\ref{inst:0316}}
+\and N.        ~Mary                          \inst{\ref{inst:0134}}
+\and D.        ~Massari                       \inst{\ref{inst:0190}}
+\and G.        ~Matijevi\v{c}                 \inst{\ref{inst:0247}}
+\and T.        ~Mazeh                         \inst{\ref{inst:0254}}
+\and P.J.      ~McMillan                      \inst{\ref{inst:0015}}
+\and S.        ~Messina                       \inst{\ref{inst:0104}}
+\and D.        ~Michalik                      \inst{\ref{inst:0015}}
+\and N.R.      ~Millar                        \inst{\ref{inst:0009}}
+\and D.        ~Molina                        \inst{\ref{inst:0012}}
+\and R.        ~Molinaro                      \inst{\ref{inst:0231}}
+\and L.        ~Moln\'{a}r                    \inst{\ref{inst:0316}}
+\and P.        ~Montegriffo                   \inst{\ref{inst:0034}}
+\and R.        ~Mor                           \inst{\ref{inst:0012}}
+\and R.        ~Morbidelli                    \inst{\ref{inst:0030}}
+\and T.        ~Morel                         \inst{\ref{inst:0075}}
+\and D.        ~Morris                        \inst{\ref{inst:0073}}
+\and A.F.      ~Mulone                        \inst{\ref{inst:0043}}
+\and T.        ~Muraveva                      \inst{\ref{inst:0034}}
+\and I.        ~Musella                       \inst{\ref{inst:0231}}
+\and G.        ~Nelemans                      \inst{\ref{inst:0136},\ref{inst:0074}}
+\and L.        ~Nicastro                      \inst{\ref{inst:0034}}
+\and L.        ~Noval                         \inst{\ref{inst:0134}}
+\and W.        ~O'Mullane                     \inst{\ref{inst:0014},\ref{inst:0089}}
+\and C.        ~Ord\'{e}novic                 \inst{\ref{inst:0017}}
+\and D.        ~Ord\'{o}\~{n}ez-Blanco        \inst{\ref{inst:0045}}
+\and P.        ~Osborne                       \inst{\ref{inst:0009}}
+\and C.        ~Pagani                        \inst{\ref{inst:0167}}
+\and I.        ~Pagano                        \inst{\ref{inst:0104}}
+\and F.        ~Pailler                       \inst{\ref{inst:0018}}
+\and H.        ~Palacin                       \inst{\ref{inst:0134}}
+\and L.        ~Palaversa                     \inst{\ref{inst:0009},\ref{inst:0010}}
+\and A.        ~Panahi                        \inst{\ref{inst:0254}}
+\and M.        ~Pawlak                        \inst{\ref{inst:0408},\ref{inst:0409}}
+\and A.M.      ~Piersimoni                    \inst{\ref{inst:0229}}
+\and F.-X.     ~Pineau                        \inst{\ref{inst:0090}}
+\and E.        ~Plachy                        \inst{\ref{inst:0316}}
+\and G.        ~Plum                          \inst{\ref{inst:0005}}
+\and E.        ~Poggio                        \inst{\ref{inst:0161},\ref{inst:0030}}
+\and E.        ~Poujoulet                     \inst{\ref{inst:0416}}
+\and A.        ~Pr\v{s}a                      \inst{\ref{inst:0324}}
+\and L.        ~Pulone                        \inst{\ref{inst:0109}}
+\and E.        ~Racero                        \inst{\ref{inst:0037}}
+\and S.        ~Ragaini                       \inst{\ref{inst:0034}}
+\and N.        ~Rambaux                       \inst{\ref{inst:0063}}
+\and M.        ~Ramos-Lerate                  \inst{\ref{inst:0422}}
+\and S.        ~Regibo                        \inst{\ref{inst:0074}}
+\and C.        ~Reyl\'{e}                     \inst{\ref{inst:0120}}
+\and F.        ~Riclet                        \inst{\ref{inst:0018}}
+\and V.        ~Ripepi                        \inst{\ref{inst:0231}}
+\and A.        ~Riva                          \inst{\ref{inst:0030}}
+\and A.        ~Rivard                        \inst{\ref{inst:0134}}
+\and G.        ~Rixon                         \inst{\ref{inst:0009}}
+\and T.        ~Roegiers                      \inst{\ref{inst:0430}}
+\and M.        ~Roelens                       \inst{\ref{inst:0010}}
+\and M.        ~Romero-G\'{o}mez              \inst{\ref{inst:0012}}
+\and N.        ~Rowell                        \inst{\ref{inst:0073}}
+\and F.        ~Royer                         \inst{\ref{inst:0005}}
+\and L.        ~Ruiz-Dern                     \inst{\ref{inst:0005}}
+\and G.        ~Sadowski                      \inst{\ref{inst:0019}}
+\and T.        ~Sagrist\`{a} Sell\'{e}s       \inst{\ref{inst:0008}}
+\and J.        ~Sahlmann                      \inst{\ref{inst:0014},\ref{inst:0439}}
+\and J.        ~Salgado                       \inst{\ref{inst:0440}}
+\and E.        ~Salguero                      \inst{\ref{inst:0078}}
+\and N.        ~Sanna                         \inst{\ref{inst:0021}}
+\and T.        ~Santana-Ros                   \inst{\ref{inst:0310}}
+\and M.        ~Sarasso                       \inst{\ref{inst:0030}}
+\and H.        ~Savietto                      \inst{\ref{inst:0445}}
+\and M.        ~Schultheis                    \inst{\ref{inst:0017}}
+\and E.        ~Sciacca                       \inst{\ref{inst:0104}}
+\and M.        ~Segol                         \inst{\ref{inst:0448}}
+\and J.C.      ~Segovia                       \inst{\ref{inst:0037}}
+\and D.        ~S\'{e}gransan                 \inst{\ref{inst:0010}}
+\and I-C.      ~Shih                          \inst{\ref{inst:0005}}
+\and L.        ~Siltala                       \inst{\ref{inst:0114},\ref{inst:0453}}
+\and A.F.      ~Silva                         \inst{\ref{inst:0102}}
+\and R.L.      ~Smart                         \inst{\ref{inst:0030}}
+\and K.W.      ~Smith                         \inst{\ref{inst:0007}}
+\and E.        ~Solano                        \inst{\ref{inst:0165},\ref{inst:0458}}
+\and F.        ~Solitro                       \inst{\ref{inst:0043}}
+\and R.        ~Sordo                         \inst{\ref{inst:0002}}
+\and S.        ~Soria Nieto                   \inst{\ref{inst:0012}}
+\and J.        ~Souchay                       \inst{\ref{inst:0058}}
+\and A.        ~Spagna                        \inst{\ref{inst:0030}}
+\and F.        ~Spoto                         \inst{\ref{inst:0017},\ref{inst:0063}}
+\and U.        ~Stampa                        \inst{\ref{inst:0008}}
+\and I.A.      ~Steele                        \inst{\ref{inst:0364}}
+\and H.        ~Steidelm\"{ u}ller            \inst{\ref{inst:0013}}
+\and C.A.      ~Stephenson                    \inst{\ref{inst:0023}}
+\and H.        ~Stoev                         \inst{\ref{inst:0470}}
+\and F.F.      ~Suess                         \inst{\ref{inst:0009}}
+\and J.        ~Surdej                        \inst{\ref{inst:0075}}
+\and L.        ~Szabados                      \inst{\ref{inst:0316}}
+\and E.        ~Szegedi-Elek                  \inst{\ref{inst:0316}}
+\and D.        ~Tapiador                      \inst{\ref{inst:0475},\ref{inst:0476}}
+\and F.        ~Taris                         \inst{\ref{inst:0058}}
+\and G.        ~Tauran                        \inst{\ref{inst:0134}}
+\and M.B.      ~Taylor                        \inst{\ref{inst:0479}}
+\and R.        ~Teixeira                      \inst{\ref{inst:0232}}
+\and D.        ~Terrett                       \inst{\ref{inst:0122}}
+\and P.        ~Teyssandier                   \inst{\ref{inst:0058}}
+\and W.        ~Thuillot                      \inst{\ref{inst:0063}}
+\and A.        ~Titarenko                     \inst{\ref{inst:0017}}
+\and F.        ~Torra Clotet                  \inst{\ref{inst:0485}}
+\and C.        ~Turon                         \inst{\ref{inst:0005}}
+\and A.        ~Ulla                          \inst{\ref{inst:0487}}
+\and E.        ~Utrilla                       \inst{\ref{inst:0097}}
+\and S.        ~Uzzi                          \inst{\ref{inst:0043}}
+\and M.        ~Vaillant                      \inst{\ref{inst:0134}}
+\and G.        ~Valentini                     \inst{\ref{inst:0229}}
+\and V.        ~Valette                       \inst{\ref{inst:0018}}
+\and A.        ~van Elteren                   \inst{\ref{inst:0001}}
+\and E.        ~Van Hemelryck                 \inst{\ref{inst:0064}}
+\and M.        ~van Leeuwen                   \inst{\ref{inst:0009}}
+\and M.        ~Vaschetto                     \inst{\ref{inst:0043}}
+\and A.        ~Vecchiato                     \inst{\ref{inst:0030}}
+\and J.        ~Veljanoski                    \inst{\ref{inst:0190}}
+\and Y.        ~Viala                         \inst{\ref{inst:0005}}
+\and D.        ~Vicente                       \inst{\ref{inst:0283}}
+\and S.        ~Vogt                          \inst{\ref{inst:0430}}
+\and C.        ~von Essen                     \inst{\ref{inst:0502}}
+\and H.        ~Voss                          \inst{\ref{inst:0012}}
+\and V.        ~Votruba                       \inst{\ref{inst:0336}}
+\and S.        ~Voutsinas                     \inst{\ref{inst:0073}}
+\and G.        ~Walmsley                      \inst{\ref{inst:0018}}
+\and M.        ~Weiler                        \inst{\ref{inst:0012}}
+\and O.        ~Wertz                         \inst{\ref{inst:0508}}
+\and T.        ~Wevers                        \inst{\ref{inst:0009},\ref{inst:0136}}
+\and \L{}.     ~Wyrzykowski                   \inst{\ref{inst:0009},\ref{inst:0408}}
+\and A.        ~Yoldas                        \inst{\ref{inst:0009}}
+\and M.        ~\v{Z}erjal                    \inst{\ref{inst:0323},\ref{inst:0515}}
+\and H.        ~Ziaeepour                     \inst{\ref{inst:0120}}
+\and J.        ~Zorec                         \inst{\ref{inst:0517}}
+\and S.        ~Zschocke                      \inst{\ref{inst:0013}}
+\and S.        ~Zucker                        \inst{\ref{inst:0519}}
+\and C.        ~Zurbach                       \inst{\ref{inst:0098}}
+\and T.        ~Zwitter                       \inst{\ref{inst:0323}}
+}
+\institute{
+     Leiden Observatory, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands\relax                                                                                                           \label{inst:0001}
+\and INAF - Osservatorio astronomico di Padova, Vicolo Osservatorio 5, 35122 Padova, Italy\relax                                                                                                             \label{inst:0002}
+\and Science Support Office, Directorate of Science, European Space Research and Technology Centre (ESA/ESTEC), Keplerlaan 1, 2201AZ, Noordwijk, The Netherlands\relax                                       \label{inst:0003}
+\and GEPI, Observatoire de Paris, Universit\'{e} PSL, CNRS, 5 Place Jules Janssen, 92190 Meudon, France\relax                                                                                                \label{inst:0005}
+\and Univ. Grenoble Alpes, CNRS, IPAG, 38000 Grenoble, France\relax                                                                                                                                          \label{inst:0006}
+\and Max Planck Institute for Astronomy, K\"{ o}nigstuhl 17, 69117 Heidelberg, Germany\relax                                                                                                                 \label{inst:0007}
+\and Astronomisches Rechen-Institut, Zentrum f\"{ u}r Astronomie der Universit\"{ a}t Heidelberg, M\"{ o}nchhofstr. 12-14, 69120 Heidelberg, Germany\relax                                                   \label{inst:0008}
+\and Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, United Kingdom\relax                                                                                                \label{inst:0009}
+\and Department of Astronomy, University of Geneva, Chemin des Maillettes 51, 1290 Versoix, Switzerland\relax                                                                                                \label{inst:0010}
+\and Mission Operations Division, Operations Department, Directorate of Science, European Space Research and Technology Centre (ESA/ESTEC), Keplerlaan 1, 2201 AZ, Noordwijk, The Netherlands\relax          \label{inst:0011}
+\and Institut de Ci\`{e}ncies del Cosmos, Universitat  de  Barcelona  (IEEC-UB), Mart\'{i} i  Franqu\`{e}s  1, 08028 Barcelona, Spain\relax                                                                  \label{inst:0012}
+\and Lohrmann Observatory, Technische Universit\"{ a}t Dresden, Mommsenstra{\ss}e 13, 01062 Dresden, Germany\relax                                                                                           \label{inst:0013}
+\and European Space Astronomy Centre (ESA/ESAC), Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                \label{inst:0014}
+\and Lund Observatory, Department of Astronomy and Theoretical Physics, Lund University, Box 43, 22100 Lund, Sweden\relax                                                                                    \label{inst:0015}
+\and Universit\'{e} C\^{o}te d'Azur, Observatoire de la C\^{o}te d'Azur, CNRS, Laboratoire Lagrange, Bd de l'Observatoire, CS 34229, 06304 Nice Cedex 4, France\relax                                        \label{inst:0017}
+\and CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                                          \label{inst:0018}
+\and Institut d'Astronomie et d'Astrophysique, Universit\'{e} Libre de Bruxelles CP 226, Boulevard du Triomphe, 1050 Brussels, Belgium\relax                                                                 \label{inst:0019}
+\and F.R.S.-FNRS, Rue d'Egmont 5, 1000 Brussels, Belgium\relax                                                                                                                                               \label{inst:0020}
+\and INAF - Osservatorio Astrofisico di Arcetri, Largo Enrico Fermi 5, 50125 Firenze, Italy\relax                                                                                                            \label{inst:0021}
+\and Telespazio Vega UK Ltd for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                       \label{inst:0023}
+\and Laboratoire d'astrophysique de Bordeaux, Univ. Bordeaux, CNRS, B18N, all{\'e}e Geoffroy Saint-Hilaire, 33615 Pessac, France\relax                                                                       \label{inst:0024}
+\and Mullard Space Science Laboratory, University College London, Holmbury St Mary, Dorking, Surrey RH5 6NT, United Kingdom\relax                                                                            \label{inst:0029}
+\and INAF - Osservatorio Astrofisico di Torino, via Osservatorio 20, 10025 Pino Torinese (TO), Italy\relax                                                                                                   \label{inst:0030}
+\and INAF - Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, via Piero Gobetti 93/3, 40129 Bologna, Italy\relax                                                                                \label{inst:0034}
+\and Serco Gesti\'{o}n de Negocios for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                \label{inst:0037}
+\and ALTEC S.p.a, Corso Marche, 79,10146 Torino, Italy\relax                                                                                                                                                 \label{inst:0043}
+\and Department of Astronomy, University of Geneva, Chemin d'Ecogia 16, 1290 Versoix, Switzerland\relax                                                                                                      \label{inst:0045}
+\and Gaia DPAC Project Office, ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                            \label{inst:0052}
+\and SYRTE, Observatoire de Paris, Universit\'{e} PSL, CNRS,  Sorbonne Universit\'{e}, LNE, 61 avenue de l’Observatoire 75014 Paris, France\relax                                                          \label{inst:0058}
+\and National Observatory of Athens, I. Metaxa and Vas. Pavlou, Palaia Penteli, 15236 Athens, Greece\relax                                                                                                   \label{inst:0061}
+\and IMCCE, Observatoire de Paris, Universit\'{e} PSL, CNRS,  Sorbonne Universit\'{e}, Univ. Lille, 77 av. Denfert-Rochereau, 75014 Paris, France\relax                                                      \label{inst:0063}
+\and Royal Observatory of Belgium, Ringlaan 3, 1180 Brussels, Belgium\relax                                                                                                                                  \label{inst:0064}
+\and Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, United Kingdom\relax                                                                            \label{inst:0073}
+\and Instituut voor Sterrenkunde, KU Leuven, Celestijnenlaan 200D, 3001 Leuven, Belgium\relax                                                                                                                \label{inst:0074}
+\and Institut d'Astrophysique et de G\'{e}ophysique, Universit\'{e} de Li\`{e}ge, 19c, All\'{e}e du 6 Ao\^{u}t, B-4000 Li\`{e}ge, Belgium\relax                                                              \label{inst:0075}
+\and ATG Europe for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                                   \label{inst:0078}
+\and \'{A}rea de Lenguajes y Sistemas Inform\'{a}ticos, Universidad Pablo de Olavide, Ctra. de Utrera, km 1. 41013, Sevilla, Spain\relax                                                                     \label{inst:0082}
+\and ETSE Telecomunicaci\'{o}n, Universidade de Vigo, Campus Lagoas-Marcosende, 36310 Vigo, Galicia, Spain\relax                                                                                             \label{inst:0084}
+\and Large Synoptic Survey Telescope, 950 N. Cherry Avenue, Tucson, AZ 85719, USA\relax                                                                                                                      \label{inst:0089}
+\and Observatoire Astronomique de Strasbourg, Universit\'{e} de Strasbourg, CNRS, UMR 7550, 11 rue de l'Universit\'{e}, 67000 Strasbourg, France\relax                                                       \label{inst:0090}
+\and Kavli Institute for Cosmology, University of Cambridge, Madingley Road, Cambride CB3 0HA, United Kingdom\relax                                                                                          \label{inst:0093}
+\and Aurora Technology for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                            \label{inst:0097}
+\and Laboratoire Univers et Particules de Montpellier, Universit\'{e} Montpellier, Place Eug\`{e}ne Bataillon, CC72, 34095 Montpellier Cedex 05, France\relax                                                \label{inst:0098}
+\and Department of Physics and Astronomy, Division of Astronomy and Space Physics, Uppsala University, Box 516, 75120 Uppsala, Sweden\relax                                                                  \label{inst:0101}
+\and CENTRA, Universidade de Lisboa, FCUL, Campo Grande, Edif. C8, 1749-016 Lisboa, Portugal\relax                                                                                                           \label{inst:0102}
+\and Universit\`{a} di Catania, Dipartimento di Fisica e Astronomia, Sezione Astrofisica, Via S. Sofia 78, 95123 Catania, Italy\relax                                                                        \label{inst:0103}
+\and INAF - Osservatorio Astrofisico di Catania, via S. Sofia 78, 95123 Catania, Italy\relax                                                                                                                 \label{inst:0104}
+\and University of Vienna, Department of Astrophysics, T\"{ u}rkenschanzstra{\ss}e 17, A1180 Vienna, Austria\relax                                                                                           \label{inst:0105}
+\and CITIC – Department of Computer Science, University of A Coru\~{n}a, Campus de Elvi\~{n}a S/N, 15071, A Coru\~{n}a, Spain\relax                                                                        \label{inst:0107}
+\and CITIC – Astronomy and Astrophysics, University of A Coru\~{n}a, Campus de Elvi\~{n}a S/N, 15071, A Coru\~{n}a, Spain\relax                                                                            \label{inst:0108}
+\and INAF - Osservatorio Astronomico di Roma, Via di Frascati 33, 00078 Monte Porzio Catone (Roma), Italy\relax                                                                                              \label{inst:0109}
+\and Space Science Data Center - ASI, Via del Politecnico SNC, 00133 Roma, Italy\relax                                                                                                                       \label{inst:0110}
+\and University of Helsinki, Department of Physics, P.O. Box 64, 00014 Helsinki, Finland\relax                                                                                                               \label{inst:0114}
+\and Finnish Geospatial Research Institute FGI, Geodeetinrinne 2, 02430 Masala, Finland\relax                                                                                                                \label{inst:0115}
+\and Isdefe for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                                       \label{inst:0116}
+\and Institut UTINAM UMR6213, CNRS, OSU THETA Franche-Comt\'{e} Bourgogne, Universit\'{e} Bourgogne Franche-Comt\'{e}, 25000 Besan\c{c}on, France\relax                                                      \label{inst:0120}
+\and STFC, Rutherford Appleton Laboratory, Harwell, Didcot, OX11 0QX, United Kingdom\relax                                                                                                                   \label{inst:0122}
+\and Dpto. de Inteligencia Artificial, UNED, c/ Juan del Rosal 16, 28040 Madrid, Spain\relax                                                                                                                 \label{inst:0125}
+\and Elecnor Deimos Space for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                         \label{inst:0133}
+\and Thales Services for CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                      \label{inst:0134}
+\and Department of Astrophysics/IMAPP, Radboud University, P.O.Box 9010, 6500 GL Nijmegen, The Netherlands\relax                                                                                             \label{inst:0136}
+\and European Southern Observatory, Karl-Schwarzschild-Str. 2, 85748 Garching, Germany\relax                                                                                                                 \label{inst:0143}
+\and ON/MCTI-BR, Rua Gal. Jos\'{e} Cristino 77, Rio de Janeiro, CEP 20921-400, RJ,  Brazil\relax                                                                                                             \label{inst:0145}
+\and OV/UFRJ-BR, Ladeira Pedro Ant\^{o}nio 43, Rio de Janeiro, CEP 20080-090, RJ, Brazil\relax                                                                                                               \label{inst:0146}
+\and Department of Terrestrial Magnetism, Carnegie Institution for Science, 5241 Broad Branch Road, NW, Washington, DC 20015-1305, USA\relax                                                                 \label{inst:0154}
+\and Universit\`{a} di Torino, Dipartimento di Fisica, via Pietro Giuria 1, 10125 Torino, Italy\relax                                                                                                        \label{inst:0161}
+\and Departamento de Astrof\'{i}sica, Centro de Astrobiolog\'{i}a (CSIC-INTA), ESA-ESAC. Camino Bajo del Castillo s/n. 28692 Villanueva de la Ca\~{n}ada, Madrid, Spain\relax                                \label{inst:0165}
+\and Leicester Institute of Space and Earth Observation and Department of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, United Kingdom\relax                           \label{inst:0167}
+\and Departamento de Estad\'{i}stica, Universidad de C\'{a}diz, Calle Rep\'{u}blica \'{A}rabe Saharawi s/n. 11510, Puerto Real, C\'{a}diz, Spain\relax                                                       \label{inst:0172}
+\and Astronomical Institute Bern University, Sidlerstrasse 5, 3012 Bern, Switzerland (present address)\relax                                                                                                 \label{inst:0175}
+\and EURIX S.r.l., Corso Vittorio Emanuele II 61, 10128, Torino, Italy\relax                                                                                                                                 \label{inst:0176}
+\and Harvard-Smithsonian Center for Astrophysics, 60 Garden Street, Cambridge MA 02138, USA\relax                                                                                                            \label{inst:0180}
+\and HE Space Operations BV for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                       \label{inst:0183}
+\and Kapteyn Astronomical Institute, University of Groningen, Landleven 12, 9747 AD Groningen, The Netherlands\relax                                                                                         \label{inst:0190}
+\and SISSA - Scuola Internazionale Superiore di Studi Avanzati, via Bonomea 265, 34136 Trieste, Italy\relax                                                                                                  \label{inst:0191}
+\and University of Turin, Department of Computer Sciences, Corso Svizzera 185, 10149 Torino, Italy\relax                                                                                                     \label{inst:0201}
+\and SRON, Netherlands Institute for Space Research, Sorbonnelaan 2, 3584CA, Utrecht, The Netherlands\relax                                                                                                  \label{inst:0202}
+\and Dpto. de Matem\'{a}tica Aplicada y Ciencias de la Computaci\'{o}n, Univ. de Cantabria, ETS Ingenieros de Caminos, Canales y Puertos, Avda. de los Castros s/n, 39005 Santander, Spain\relax             \label{inst:0206}
+\and Unidad de Astronom\'ia, Universidad de Antofagasta, Avenida Angamos 601, Antofagasta 1270300, Chile\relax                                                                                               \label{inst:0213}
+\and CRAAG - Centre de Recherche en Astronomie, Astrophysique et G\'{e}ophysique, Route de l'Observatoire Bp 63 Bouzareah 16340 Algiers, Algeria\relax                                                       \label{inst:0224}
+\and University of Antwerp, Onderzoeksgroep Toegepaste Wiskunde, Middelheimlaan 1, 2020 Antwerp, Belgium\relax                                                                                               \label{inst:0227}
+\and INAF - Osservatorio Astronomico d'Abruzzo, Via Mentore Maggini, 64100 Teramo, Italy\relax                                                                                                               \label{inst:0229}
+\and INAF - Osservatorio Astronomico di Capodimonte, Via Moiariello 16, 80131, Napoli, Italy\relax                                                                                                           \label{inst:0231}
+\and Instituto de Astronomia, Geof\`{i}sica e Ci\^{e}ncias Atmosf\'{e}ricas, Universidade de S\~{a}o Paulo, Rua do Mat\~{a}o, 1226, Cidade Universitaria, 05508-900 S\~{a}o Paulo, SP, Brazil\relax          \label{inst:0232}
+\and Department of Astrophysics, Astronomy and Mechanics, National and Kapodistrian University of Athens, Panepistimiopolis, Zografos, 15783 Athens, Greece\relax                                            \label{inst:0244}
+\and Leibniz Institute for Astrophysics Potsdam (AIP), An der Sternwarte 16, 14482 Potsdam, Germany\relax                                                                                                    \label{inst:0247}
+\and RHEA for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                                         \label{inst:0249}
+\and ATOS for CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                                 \label{inst:0251}
+\and School of Physics and Astronomy, Tel Aviv University, Tel Aviv 6997801, Israel\relax                                                                                                                    \label{inst:0254}
+\and UNINOVA - CTS, Campus FCT-UNL, Monte da Caparica, 2829-516 Caparica, Portugal\relax                                                                                                                     \label{inst:0255}
+\and School of Physics, O'Brien Centre for Science North, University College Dublin, Belfield, Dublin 4, Ireland\relax                                                                                       \label{inst:0266}
+\and Dipartimento di Fisica e Astronomia, Universit\`{a} di Bologna, Via Piero Gobetti 93/2, 40129 Bologna, Italy\relax                                                                                      \label{inst:0272}
+\and Barcelona Supercomputing Center - Centro Nacional de Supercomputaci\'{o}n, c/ Jordi Girona 29, Ed. Nexus II, 08034 Barcelona, Spain\relax                                                               \label{inst:0283}
+\and Department of Computer Science, Electrical and Space Engineering, Lule\aa{} University of Technology, Box 848, S-981 28 Kiruna, Sweden\relax                                                            \label{inst:0289}
+\and Max Planck Institute for Extraterrestrial Physics, High Energy Group, Gie{\ss}enbachstra{\ss}e, 85741 Garching, Germany\relax                                                                           \label{inst:0291}
+\and Astronomical Observatory Institute, Faculty of Physics, Adam Mickiewicz University, S{\l}oneczna 36, 60-286 Pozna{\'n}, Poland\relax                                                                    \label{inst:0310}
+\and Konkoly Observatory, Research Centre for Astronomy and Earth Sciences, Hungarian Academy of Sciences, Konkoly Thege Mikl\'{o}s \'{u}t 15-17, 1121 Budapest, Hungary\relax                               \label{inst:0316}
+\and E\"{ o}tv\"{ o}s Lor\'and University, Egyetem t\'{e}r 1-3, H-1053 Budapest, Hungary\relax                                                                                                               \label{inst:0317}
+\and American Community Schools of Athens, 129 Aghias Paraskevis Ave. \& Kazantzaki Street, Halandri, 15234 Athens, Greece\relax                                                                             \label{inst:0320}
+\and Faculty of Mathematics and Physics, University of Ljubljana, Jadranska ulica 19, 1000 Ljubljana, Slovenia\relax                                                                                         \label{inst:0323}
+\and Villanova University, Department of Astrophysics and Planetary Science, 800 E Lancaster Avenue, Villanova PA 19085, USA\relax                                                                           \label{inst:0324}
+\and Physics Department, University of Antwerp, Groenenborgerlaan 171, 2020 Antwerp, Belgium\relax                                                                                                           \label{inst:0326}
+\and McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA 15213, USA\relax                                                                 \label{inst:0332}
+\and Astronomical Institute, Academy of Sciences of the Czech Republic, Fri\v{c}ova 298, 25165 Ond\v{r}ejov, Czech Republic\relax                                                                            \label{inst:0336}
+\and Telespazio for CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                           \label{inst:0341}
+\and Institut de Physique de Rennes, Universit{\'e} de Rennes 1, 35042 Rennes, France\relax                                                                                                                  \label{inst:0344}
+\and Shanghai Astronomical Observatory, Chinese Academy of Sciences, 80 Nandan Rd, 200030 Shanghai, China\relax                                                                                              \label{inst:0351}
+\and School of Astronomy and Space Science, University of Chinese Academy of Sciences, Beijing 100049, China\relax                                                                                           \label{inst:0352}
+\and Niels Bohr Institute, University of Copenhagen, Juliane Maries Vej 30, 2100 Copenhagen {\O}, Denmark\relax                                                                                              \label{inst:0354}
+\and DXC Technology, Retortvej 8, 2500 Valby, Denmark\relax                                                                                                                                                  \label{inst:0355}
+\and Las Cumbres Observatory, 6740 Cortona Drive Suite 102, Goleta, CA 93117, USA\relax                                                                                                                      \label{inst:0356}
+\and Astrophysics Research Institute, Liverpool John Moores University, 146 Brownlow Hill, Liverpool L3 5RF, United Kingdom\relax                                                                            \label{inst:0364}
+\and Baja Observatory of University of Szeged, Szegedi \'{u}t III/70, 6500 Baja, Hungary\relax                                                                                                               \label{inst:0369}
+\and Laboratoire AIM, IRFU/Service d'Astrophysique - CEA/DSM - CNRS - Universit\'{e} Paris Diderot, B\^{a}t 709, CEA-Saclay, 91191 Gif-sur-Yvette Cedex, France\relax                                        \label{inst:0370}
+\and Warsaw University Observatory, Al. Ujazdowskie 4, 00-478 Warszawa, Poland\relax                                                                                                                         \label{inst:0408}
+\and Institute of Theoretical Physics, Faculty of Mathematics and Physics, Charles University in Prague, Czech Republic\relax                                                                                \label{inst:0409}
+\and AKKA for CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                                 \label{inst:0416}
+\and Vitrociset Belgium for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                           \label{inst:0422}
+\and HE Space Operations BV for ESA/ESTEC, Keplerlaan 1, 2201AZ, Noordwijk, The Netherlands\relax                                                                                                            \label{inst:0430}
+\and Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218, USA\relax                                                                                                                \label{inst:0439}
+\and QUASAR Science Resources for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                     \label{inst:0440}
+\and Fork Research, Rua do Cruzado Osberno, Lt. 1, 9 esq., Lisboa, Portugal\relax                                                                                                                            \label{inst:0445}
+\and APAVE SUDEUROPE SAS for CNES Centre Spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France\relax                                                                                  \label{inst:0448}
+\and Nordic Optical Telescope, Rambla Jos\'{e} Ana Fern\'{a}ndez P\'{e}rez 7, 38711 Bre\~{n}a Baja, Spain\relax                                                                                              \label{inst:0453}
+\and Spanish Virtual Observatory\relax                                                                                                                                                                       \label{inst:0458}
+\and Fundaci\'{o}n Galileo Galilei - INAF, Rambla Jos\'{e} Ana Fern\'{a}ndez P\'{e}rez 7, 38712 Bre\~{n}a Baja, Santa Cruz de Tenerife, Spain\relax                                                          \label{inst:0470}
+\and INSA for ESA/ESAC, Camino bajo del Castillo, s/n, Urbanizacion Villafranca del Castillo, Villanueva de la Ca\~{n}ada, 28692 Madrid, Spain\relax                                                         \label{inst:0475}
+\and Dpto. Arquitectura de Computadores y Autom\'{a}tica, Facultad de Inform\'{a}tica, Universidad Complutense de Madrid, C/ Prof. Jos\'{e} Garc\'{i}a Santesmases s/n, 28040 Madrid, Spain\relax            \label{inst:0476}
+\and H H Wills Physics Laboratory, University of Bristol, Tyndall Avenue, Bristol BS8 1TL, United Kingdom\relax                                                                                              \label{inst:0479}
+\and Institut d'Estudis Espacials de Catalunya (IEEC), Gran Capita 2-4, 08034 Barcelona, Spain\relax                                                                                                         \label{inst:0485}
+\and Applied Physics Department, Universidade de Vigo, 36310 Vigo, Spain\relax                                                                                                                               \label{inst:0487}
+\and Stellar Astrophysics Centre, Aarhus University, Department of Physics and Astronomy, 120 Ny Munkegade, Building 1520, DK-8000 Aarhus C, Denmark\relax                                                   \label{inst:0502}
+\and Argelander-Institut f\"{ ur} Astronomie, Universit\"{ a}t Bonn,  Auf dem H\"{ u}gel 71, 53121 Bonn, Germany\relax                                                                                       \label{inst:0508}
+\and Research School of Astronomy and Astrophysics, Australian National University, Canberra, ACT 2611 Australia\relax                                                                                       \label{inst:0515}
+\and Sorbonne Universit\'{e}s, UPMC Univ. Paris 6 et CNRS, UMR 7095, Institut d'Astrophysique de Paris, 98 bis bd. Arago, 75014 Paris, France\relax                                                          \label{inst:0517}
+\and Department of Geosciences, Tel Aviv University, Tel Aviv 6997801, Israel\relax                                                                                                                          \label{inst:0519}
+}
